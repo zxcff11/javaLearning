@@ -34,8 +34,4 @@ public class ProxyInnvocationHandler implements InvocationHandler {
         System.out.println("调用了"+method+"方法");
     }
 
-    public static void main(String[] args) {
-        System.out.println;
-    }
-
 }
