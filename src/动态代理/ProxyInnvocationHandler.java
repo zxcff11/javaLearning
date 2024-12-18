@@ -35,7 +35,7 @@ public class ProxyInnvocationHandler implements InvocationHandler {
     }
 
     public static void main(String[] args) {
-        System.out.println;
+//        System.out.println;
     }
 
 }
