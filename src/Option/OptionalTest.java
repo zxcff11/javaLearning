@@ -13,9 +13,9 @@ public class OptionalTest {
 
     public static void main(String[] args) {
         Optional<Student> optionalStudent = getStudentByName("lisi");
-//        Student student = optionalStudent.orElseGet(() ->
-//                new Student("hangman", 6, 23)
-//        );
+        Student student = optionalStudent.orElseGet(() ->
+                new Student("hangman", 6, 23)
+        );
         try {
             student = optionalStudent.orElseThrow((Supplier<Throwable>) ()->
                     new RuntimeException("nullPointException"));
