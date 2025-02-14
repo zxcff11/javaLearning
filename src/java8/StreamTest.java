@@ -19,6 +19,8 @@ public class StreamTest {
                 new Student("David", 23, 88),
                 new Student("Eva", 20, 95)
         );
+//        Map<String, List<Integer>> collect1 = students.stream().collect(Collectors.toMap(
+//                t -> t.getName(), ));
 //        method01(students);
 //         method02();
 
@@ -31,21 +33,21 @@ public class StreamTest {
 //                            return oldList;
 //                        }
 //                ));
-//        Map<String, List<Integer>> collect = method04(students);
-//
-//        System.out.println(collect.values());
-        System.out.println(method06(students));
+        Map<String, List<Integer>> collect = method04(students);
+
+        System.out.println(collect.values());
+//        System.out.println(method06(students));
     }
 
     private static Optional<Integer> method06(List<Student> students) {
-         return students.stream()
+        return students.stream()
                 .distinct()
                 .map(Student::getAge)
                 .reduce(Integer::sum);
     }
 
 
-    private static  Map<String, List<Integer>> method04(List<Student> students) {
+    private static Map<String, List<Integer>> method04(List<Student> students) {
         // 使用可变的 ArrayList
         return students.stream()
                 .collect(Collectors.toMap(

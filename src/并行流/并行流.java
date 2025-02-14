@@ -11,6 +11,4 @@ public class 并行流 {
                 .filter(num -> num > 5)
                 .reduce(Integer::sum));
     }
-
-
 }
