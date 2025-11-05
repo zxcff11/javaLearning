@@ -24,8 +24,8 @@ public class quickSort {
             // 将比枢纽大的元素移动到右端
             A[high] = A[low];
         }
-        A[high] = piv;
-        return high;
+        A[low] = piv;
+        return low;
     }
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package demo;
+package demo.数据结构与算法;
 
 public class biSearch {
 

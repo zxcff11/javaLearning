@@ -5,14 +5,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-//  class AsyncTask implements Callable<String> {
-//
-//     @Override
-//     public String call() throws Exception {
-//         Thread.sleep(5000);
-//         return Thread.currentThread().getName() + "异步任务完成";
-//     }
-// }
 
 public class Demo {
     public static void main(String[] args) {
